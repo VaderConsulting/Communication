@@ -23,6 +23,10 @@ Client This is a historical working copy from Dave Robinson / VaderConsulting, p
 
 Open `Communication.sln` in Visual Studio.
 
+## Requirements
+
+- Visual Studio 2008, .NET Framework 3.5
+
 ## Attribution and provenance
 
 - **Assembly company:** stratatel
