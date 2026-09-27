@@ -1,6 +1,6 @@
 # Communication
 
-Client This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
+Client Working copy from my Historical Dev folder.
 
 **Source last updated:** 2008-05-28  
 **Language:** C#  
@@ -9,7 +9,7 @@ Client This is a historical working copy from Dave Robinson / VaderConsulting, p
 
 ## What it is
 
-Client This is a historical working copy from Dave Robinson / VaderConsulting, published so the project can be found and understood from GitHub.
+Client Working copy from my Historical Dev folder.
 
 ## Solution structure
 
