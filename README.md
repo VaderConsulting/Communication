@@ -1,23 +1,19 @@
 # Communication
 
-Client Working copy from my Historical Dev folder.
+C# WCF sample with a shared `IComms` contract plus WinForms Client and Server hosts. The server self-hosts `Comms` at `http://localhost:8000/Stratatel/wcf/comms` with WSHttpBinding and metadata exchange; the client opens a `CommsClient` channel and calls `SendMessage` / `ReceiveMessage`. Useful for learning Stratatel-style duplex messaging over WCF on .NET Framework 3.5.
 
 **Source last updated:** 2008-05-28  
 **Language:** C#  
-**Target:** v3.5  
-**Output:** Library, WinExe
-
-## What it is
-
-Client Working copy from my Historical Dev folder.
+**Target:** .NET Framework 3.5  
+**Output:** Class library plus Client and Server WinForms executables
 
 ## Solution structure
 
-| Project | Language | Path |
-|---------|----------|------|
-| `WCFComms` | C# | `WCFComms/WCFComms.csproj` |
-| `Client` | C# | `Client/Client.csproj` |
-| `Server` | C# | `Server/Server.csproj` |
+| Project | Language | Type | Purpose |
+| --- | --- | --- | --- |
+| `WCFComms` | C# | Library | `IComms` service contract and `Comms` implementation (`Stratatel.wcf.comms`) |
+| `Server` | C# | WinForms exe | Self-hosts the WCF service and shows received messages |
+| `Client` | C# | WinForms exe | WCF client that sends test messages to the local endpoint |
 
 ## How to open
 
@@ -25,12 +21,13 @@ Open `Communication.sln` in Visual Studio.
 
 ## Requirements
 
-- Visual Studio 2008, .NET Framework 3.5
+- Visual Studio 2008 to 2017
+- .NET Framework 3.5
+- Permission to listen on `http://localhost:8000` for the Server host
 
 ## Attribution and provenance
 
-- **Assembly company:** stratatel
-- **Assembly copyright:** Copyright ©  2008, Copyright © stratatel 2008
+Working copy from my Historical Dev folder. Namespace and endpoint use the Stratatel WCF comms sample naming from this tree.
 
 ## License
 
